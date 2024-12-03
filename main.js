@@ -2,10 +2,10 @@
 (function () {
   const spanEl = document.querySelector("main h2 span");
   const txtArr = [
-    "Web Publisher",
-    "Front-End Developer",
-    "Back-End Developer",
-    "Web Developer",
+    "Innovate. Automate. Dominate.",
+    "Automate Today, Lead Tomorrow.",
+    "Efficiency Meets Excellence",
+    "Your Automation. Our Expertise.",
   ];
   let index = 0;
   let currentTxt = txtArr[index].split("");
@@ -72,3 +72,4 @@
       });
     }
 })();
+

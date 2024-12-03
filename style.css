@@ -84,7 +84,7 @@ main h4{
 font-size: 2rem;
 }
 main h2{
-font-size: 3.5rem;
+font-size: 2.8rem;
 margin: 2rem 0;
 letter-spacing: 3px;
 font-family: "Varela Round", sans-serif;
@@ -94,7 +94,7 @@ main p{
     margin: 0 auto;
     font-size: 1.25rem;
 }
-main button.download{
+/* main button.download{
     background-color: transparent;
     border: 3px solid white;
     border-radius: 20px;
@@ -103,7 +103,79 @@ main button.download{
     margin-top: 3rem;
     font-weight: bold;
     cursor: pointer;
+} */
+
+main button.btn-5 {
+    position: relative;
+    line-height: 20px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    border-radius: 6px;
+    color: white;
+    background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+      border: none;
 }
+
+main button.btn-5 span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+main button.btn-5:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+main button.btn-5:before,.btn-5:after{
+    position: absolute;
+    content:'';
+    top:0;
+    right:0;
+    background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+}
+main button.btn-5:before {
+    height: 0%;
+    width: 2px;
+}
+main button.btn-5:after{
+    width: 0%;
+    height: 2px;
+}
+main button.btn-5:hover:before{
+    height: 100%;
+}
+main button.btn-5:hover:after{
+    width:100%;
+}
+main button.btn-5 span:before,main button.btn-5 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+}
+main button.btn-5 span:before {
+    width: 2px;
+    height: 0%;
+}
+main button.btn-5 span:after {
+    width: 0%;
+    height: 2px;
+}
+main button.btn-5 span:hover:before {
+    height: 100%;
+}
+main button.btn-5 span:hover:after {
+    width: 100%;
+}
+
+
+
 main button.mouse{
     background-color: transparent;
     border: none;
