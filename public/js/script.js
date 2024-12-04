@@ -52,24 +52,21 @@
 
 // 애니메이션 스크롤
 (function () {
-    const animationMove = function(selector) {
-        const target = document.querySelector(selector);
-        const browserScrollY = window.pageYOffset;
-        const targetScrollY = target.getBoundingClientRect().top + browserScrollY;
-        window.scrollTo({ top: targetScrollY, behavior: "smooth" });
+  const animationMove = function (selector) {
+    const target = document.querySelector(selector);
+    const browserScrollY = window.pageYOffset;
+    const targetScrollY = target.getBoundingClientRect().top + browserScrollY;
+    window.scrollTo({ top: targetScrollY, behavior: "smooth" });
     console.log(target);
-    }
-    
-    
-    const scrollMoveEl = document.querySelectorAll(
-      "[data-animation-scroll='true']"
-    );
-    console.log(scrollMoveEl);
-    for (let i = 0; i < scrollMoveEl.length; i++) {
-      scrollMoveEl[i].addEventListener("click", function (e) {
-        animationMove(this.dataset.target);
-       
-      });
-    }
-})();
+  };
 
+  const scrollMoveEl = document.querySelectorAll(
+    "[data-animation-scroll='true']"
+  );
+  console.log(scrollMoveEl);
+  for (let i = 0; i < scrollMoveEl.length; i++) {
+    scrollMoveEl[i].addEventListener("click", function (e) {
+      animationMove(this.dataset.target);
+    });
+  }
+})();

@@ -1,0 +1,21 @@
+{
+  "name": "saa",
+  "version": "1.0.0",
+  "description": "자동화기계사이트",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "express-ejs-layouts": "^2.5.1",
+    "layout": "^2.2.0",
+    "mongoose": "^8.8.3"
+  }
+}
