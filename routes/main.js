@@ -1,18 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const mainLayout = "../views/layouts/main.ejs";
+const Post = require("../models/Post");
 const asyncHandler = require("express-async-handler");
 
-
-router.get(
-  ["/", "/home"],
-  asyncHandler(async (req, res) => {
-    const locals = {
-      title: "Home",
-    };
-    const date = await Post.find({});
-    res.render("index", { locals, date, layout: mainLayout });
-  })
-);
+router.get("/",(req, res) => {
+  res.render("index",{layout:mainLayout});})
 
 module.exports = router;
